@@ -1,0 +1,16 @@
+/* No Lab 02 stylesheet was supplied. Keep the original HTML appearance
+   and add only small-screen overflow fixes for the Lab 03 copy. */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+input {
+    max-width: 100%;
+    box-sizing: border-box;
+}
