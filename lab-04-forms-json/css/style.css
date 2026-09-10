@@ -1,0 +1,82 @@
+/* No Lab 02 stylesheet was supplied. Keep the original HTML appearance
+   and add only small-screen overflow fixes for the Lab 03 copy. */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+input {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Lab 04 form and output styling, based on the manual. */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #222222;
+}
+
+header, nav, main, footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section {
+    margin-bottom: 24px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 6px 0 12px;
+    font: inherit;
+}
+
+button {
+    max-width: 100%;
+    padding: 10px 16px;
+    margin: 8px 4px 8px 0;
+    font: inherit;
+    cursor: pointer;
+}
+
+pre {
+    padding: 12px;
+    background-color: #f3f5f7;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}
+
+input:focus-visible, select:focus-visible, button:focus-visible, a:focus-visible {
+    outline: 2px solid #245c87;
+    outline-offset: 2px;
+}
+
+@media (max-width: 480px) {
+    main, header, nav, footer {
+        padding: 12px;
+    }
+
+    section {
+        padding: 12px;
+    }
+}
