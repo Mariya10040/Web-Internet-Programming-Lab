@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab 05 — HTTP, Fetch and Simple API Use</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>SEU Tech Event 2026</h1>
+    <p>Lab 05: HTTP, Fetch and Simple API Use</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a> |
+    <a href="#about">About</a> |
+    <a href="#schedule">Schedule</a> |
+    <a href="#registration">Registration</a>
+  </nav>
+
+  <main>
+
+    <section id="home">
+      <h2>Workshop Fetch Demo</h2>
+      <p>Use the buttons below to load local JSON and a public API.</p>
+
+      <section class="card">
+        <h3>Workshop Details</h3>
+        <p>Click the button to load workshop information.</p>
+
+        <button type="button" onclick="loadWorkshop()">Load Workshop Details</button>
+
+        <p><strong>Title:</strong> <span id="workshopTitle">Not loaded</span></p>
+        <p><strong>Date:</strong> <span id="workshopDate">Not loaded</span></p>
+        <p><strong>Venue:</strong> <span id="workshopVenue">Not loaded</span></p>
+        <p><strong>Seats:</strong> <span id="workshopSeats">Not loaded</span></p>
+        <p id="loadMessage"></p>
+      </section>
+
+      <section class="card">
+        <h3>Public API Practice</h3>
+        <button type="button" onclick="loadSampleUser()">Load Sample User</button>
+        <p id="apiUser">No API data loaded yet.</p>
+      </section>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>SEU CSE — Web Programming Lab</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
